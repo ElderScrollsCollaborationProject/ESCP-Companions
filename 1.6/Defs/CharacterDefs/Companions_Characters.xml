@@ -93,6 +93,9 @@
                     </li>
                 </traits>
             </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition" MayRequire="SirMashedPotato.Bloodmoon">
+                <hediffDef>Mashed_Bloodmoon_Lycanthrope</hediffDef>
+            </li>
         </definitions>
     </ESCP.Core.CharacterDef>
 
@@ -118,6 +121,9 @@
                 <headTypeDef>Female_AverageNormal</headTypeDef>
                 <bodyTypeDef>Female</bodyTypeDef>
             </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition" MayRequire="SirMashedPotato.Bloodmoon">
+                <hediffDef>Mashed_Bloodmoon_Lycanthrope</hediffDef>
+            </li>
         </definitions>
     </ESCP.Core.CharacterDef>
 
@@ -142,6 +148,9 @@
                 <beardDef>Stubble</beardDef>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition" MayRequire="SirMashedPotato.Bloodmoon">
+                <hediffDef>Mashed_Bloodmoon_Lycanthrope</hediffDef>
             </li>
         </definitions>
     </ESCP.Core.CharacterDef>
@@ -176,6 +185,9 @@
                     </li>
                 </traits>
             </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition" MayRequire="SirMashedPotato.Bloodmoon">
+                <hediffDef>Mashed_Bloodmoon_Lycanthrope</hediffDef>
+            </li>
         </definitions>
     </ESCP.Core.CharacterDef>
 
@@ -209,6 +221,9 @@
                         <value>0</value>
                     </li>
                 </traits>
+            </li>
+            <li Class="ESCP.Core.CharacterHediffDefinition" MayRequire="SirMashedPotato.Bloodmoon">
+                <hediffDef>Mashed_Bloodmoon_Lycanthrope</hediffDef>
             </li>
         </definitions>
     </ESCP.Core.CharacterDef>
