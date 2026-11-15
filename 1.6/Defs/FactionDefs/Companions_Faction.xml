@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>ESCP_Faction_Companions</defName>
+        <label>Companions</label>
+        <description>The Companions are Skyrim's oldest warrior brotherhood, founded in the age of heroes and based at Jorrvaskr in Whiterun. They hold no political allegiances, answer to no guild charter from the south, and take no contracts against their own. They hire out to those who need capable hands, ask few questions, and pay what was agreed. The Harbinger leads by example rather than decree. Membership is earned, not bought, which is either a virtue or an inconvenience depending on how badly you need them.</description>
+        <colorSpectrum>
+            <li>(0.72, 0.40, 0.18)</li>
+        </colorSpectrum>
+        <pawnSingular>Companion</pawnSingular>
+        <pawnsPlural>Companions</pawnsPlural>
+        <categoryTag>Outlander</categoryTag>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <hidden>true</hidden>
+        <settlementGenerationWeight>0</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <displayInFactionSelection>false</displayInFactionSelection>
+        <canSiege>false</canSiege>
+        <canStageAttacks>false</canStageAttacks>
+        <leaderTitle>Harbinger</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <techLevel>Medieval</techLevel>
+        <fixedName>The Companions</fixedName>
+
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>ESCP_Backstory_FightersGuild_Child</li>
+                    <li>ESCP_Backstory_FightersGuild_Fighter</li>
+                </categories>
+                <commonality>0.8</commonality>
+            </li>
+        </backstoryFilters>
+
+        <caravanTraderKinds>
+            <li>ESCP_Caravan_FightersGuild_Quartermaster</li>
+        </caravanTraderKinds>
+
+        <visitorTraderKinds>
+            <li>ESCP_Caravan_FightersGuild_Quartermaster</li>
+        </visitorTraderKinds>
+
+        <pawnGroupMakers>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <ESCP_Pawnkind_FightersGuild_Member>3</ESCP_Pawnkind_FightersGuild_Member>
+                    <ESCP_Pawnkind_FightersGuild_Veteran>2</ESCP_Pawnkind_FightersGuild_Veteran>
+                    <ESCP_Pawnkind_FightersGuild_Champion>1</ESCP_Pawnkind_FightersGuild_Champion>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <commonality>40</commonality>
+                <options>
+                    <ESCP_Pawnkind_FightersGuild_Member>3</ESCP_Pawnkind_FightersGuild_Member>
+                    <ESCP_Pawnkind_FightersGuild_Veteran>1</ESCP_Pawnkind_FightersGuild_Veteran>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Trader</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <ESCP_Pawnkind_FightersGuild_Member>1</ESCP_Pawnkind_FightersGuild_Member>
+                </options>
+                <traders>
+                    <ESCP_Pawnkind_FightersGuild_Quartermaster>1</ESCP_Pawnkind_FightersGuild_Quartermaster>
+                </traders>
+                <carriers>
+                    <Muffalo>4</Muffalo>
+                    <Horse>2</Horse>
+                </carriers>
+            </li>
+
+        </pawnGroupMakers>
+
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+                <li>(100, 20)</li>
+                <li>(1000, 75)</li>
+                <li>(3000, 100)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+
+        <modExtensions Inherit="False">
+            <li Class="ESCP.Factions.FactionExtension_BannedArrivalModes">
+                <arrivalModes>
+                    <li>EdgeDrop</li>
+                    <li>EdgeDropGroups</li>
+                    <li>CenterDrop</li>
+                    <li>RandomDrop</li>
+                </arrivalModes>
+            </li>
+        </modExtensions>
+
+    </FactionDef>
+
+</Defs>

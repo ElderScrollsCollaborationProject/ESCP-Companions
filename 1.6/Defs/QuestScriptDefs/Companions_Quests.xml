@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>ESCP_Quest_Companions_Whelps</defName>
+        <rootSelectionWeight>0.5</rootSelectionWeight>
+        <rootMinPoints>20</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Companions: The Whelps</li>
+                <li>questName->Companions: Blooding the Whelps</li>
+                <li>questName->Companions: Shield-Siblings in Training</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull], Harbinger of the Companions, has more whelps at Jorrvaskr than the veterans can train, and asks you to take four of them for a while and teach them to fight properly.\n\nRequirements: all four must reach Melee 10 within [trainingDays] days. If any of them dies, the deal is off.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.2</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.5</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="ESCP.Guilds.QuestNode_GetGuildFactionLeader">
+                    <factionDefName>ESCP_Faction_Companions</factionDefName>
+                    <storeLeaderAs>asker</storeLeaderAs>
+                    <storeFactionAs>guildFaction</storeFactionAs>
+                </li>
+                <li Class="QuestNode_Set">
+                    <name>trainingDays</name>
+                    <value>45</value>
+                </li>
+
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_CharacterHasSpawned">
+                    <characterDef>ESCP_Character_NjadaStonearm</characterDef>
+                    <elseNode Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="ESCP.Core.RadiantQuests.QuestNode_GenerateUniqueCharacterPawn">
+                                <characterDef>ESCP_Character_NjadaStonearm</characterDef>
+                                <addToList>whelps</addToList>
+                            </li>
+                            <li Class="ESCP.Core.RadiantQuests.QuestNode_GenerateUniqueCharacterPawn">
+                                <characterDef>ESCP_Character_Torvar</characterDef>
+                                <addToList>whelps</addToList>
+                            </li>
+                            <li Class="QuestNode_LoopCount">
+                                <loopCount>2</loopCount>
+                                <node Class="QuestNode_GeneratePawn">
+                                    <kindDef>ESCP_Pawnkind_FightersGuild_Member</kindDef>
+                                    <faction>$asker.Faction</faction>
+                                    <addToList>whelps</addToList>
+                                    <allowAddictions>false</allowAddictions>
+                                </node>
+                            </li>
+                            <li Class="QuestNode_Set">
+                                <name>whelpsArrivalText</name>
+                                <value>Four whelps have walked in from Jorrvaskr, Njada Stonearm and Torvar among them. Njada has already picked a fight with the gate and Torvar has already found the mead.\n\nGet all four to Melee 10 within [trainingDays] days. Spar with them, send them hunting, or let them earn it the hard way. If any of them dies, the Companions will take the rest home.</value>
+                            </li>
+                        </nodes>
+                    </elseNode>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_LoopCount">
+                                <loopCount>4</loopCount>
+                                <node Class="QuestNode_GeneratePawn">
+                                    <kindDef>ESCP_Pawnkind_FightersGuild_Member</kindDef>
+                                    <faction>$asker.Faction</faction>
+                                    <addToList>whelps</addToList>
+                                    <allowAddictions>false</allowAddictions>
+                                </node>
+                            </li>
+                            <li Class="QuestNode_Set">
+                                <name>whelpsArrivalText</name>
+                                <value>Four more whelps have walked in from Jorrvaskr, eager and clumsy.\n\nGet all four to Melee 10 within [trainingDays] days. Spar with them, send them hunting, or let them earn it the hard way. If any of them dies, the Companions will take the rest home.</value>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_SetPawnsSkillLevel">
+                    <pawns>$whelps</pawns>
+                    <skill>Melee</skill>
+                    <level>4</level>
+                </li>
+                <li Class="QuestNode_SetAllApparelLocked">
+                    <pawns>$whelps</pawns>
+                </li>
+                <li Class="QuestNode_ExtraFaction">
+                    <factionOf>$asker</factionOf>
+                    <pawns>$whelps</pawns>
+                    <factionType>HomeFaction</factionType>
+                    <inSignalsRemovePawn>
+                        <li>whelps.RanWild</li>
+                    </inSignalsRemovePawn>
+                </li>
+                <li Class="QuestNode_LeaveOnCleanup">
+                    <pawns>$whelps</pawns>
+                    <sendStandardLetter>false</sendStandardLetter>
+                    <inSignalRemovePawn>whelps.RanWild</inSignalRemovePawn>
+                </li>
+                <li Class="QuestNode_GetWalkInSpot" />
+                <li Class="QuestNode_PawnsArrive">
+                    <pawns>$whelps</pawns>
+                    <joinPlayer>true</joinPlayer>
+                    <walkInSpot>$walkInSpot</walkInSpot>
+                    <customLetterLabel>The whelps have arrived</customLetterLabel>
+                    <customLetterText>$whelpsArrivalText</customLetterText>
+                </li>
+                <li Class="ESCP.Core.RadiantQuests.QuestNode_WatchPawnsSkillAtLeast">
+                    <pawns>$whelps</pawns>
+                    <skill>Melee</skill>
+                    <level>10</level>
+                    <outSignalComplete>whelps.Blooded</outSignalComplete>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>whelps.Destroyed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>The Whelps: a whelp lost</label>
+                                <letterDef>NegativeEvent</letterDef>
+                                <text>One of the whelps is dead. The Companions honor their dead, but they do not leave the living with whoever let it happen. The rest are going home.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                                <goodwillChangeAmount>-10</goodwillChangeAmount>
+                                <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>whelps.Blooded</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <letterDef>PositiveEvent</letterDef>
+                                <label>The Whelps: blooded</label>
+                                <text>Every one of the whelps can hold a shield wall now. They head back to Jorrvaskr to be named Shield-Siblings, and [asker_nameDef] sends thanks along with the payment.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>false</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>false</addCampLootReward>
+                                <customLetterLabel>Payment from the Companions</customLetterLabel>
+                                <customLetterText>Payment from Jorrvaskr for training the whelps.</customLetterText>
+                            </li>
+                            <li Class="ESCP.Guilds.QuestNode_GuildReputation">
+                                <guild>Companions</guild>
+                                <amount>15</amount>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Delay">
+                    <delayTicks>$($trainingDays * 60000)</delayTicks>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>The Whelps: time's up</label>
+                                <letterDef>NegativeEvent</letterDef>
+                                <text>The whelps are called back to Jorrvaskr. Not all of them made the mark, and the veterans will have to finish the job.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                                <goodwillChangeAmount>-5</goodwillChangeAmount>
+                                <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

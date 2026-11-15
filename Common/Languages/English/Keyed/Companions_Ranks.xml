@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_Companions>Sponsor:</ESCP_Rank_Mentor_Companions>
+    <ESCP_Rank_NoMentor_Companions>No sponsor</ESCP_Rank_NoMentor_Companions>
+    <ESCP_Rank_Promote_Companions>Raise in Standing</ESCP_Rank_Promote_Companions>
+    <ESCP_Rank_NextRank_Companions>Next trial</ESCP_Rank_NextRank_Companions>
+    <ESCP_Rank_ChoosePath_Companions>Choose a calling</ESCP_Rank_ChoosePath_Companions>
+    <ESCP_Rank_DaysInRank_Companions>{0} days at this rank in Jorrvaskr</ESCP_Rank_DaysInRank_Companions>
+    <ESCP_Rank_Promoted_Title_Companions>Raised to {0}</ESCP_Rank_Promoted_Title_Companions>
+    <ESCP_Rank_Promoted_Text_Companions>{0} has proven worthy and now stands as {1} among the Companions.</ESCP_Rank_Promoted_Text_Companions>
+    <ESCP_Rank_Demoted_Title_Companions>Shamed: {0}</ESCP_Rank_Demoted_Title_Companions>
+    <ESCP_Rank_Demoted_Expedition_Companions>{0} came back from a botched contract, and the Circle has knocked them from {1} back to {2}.</ESCP_Rank_Demoted_Expedition_Companions>
+    <ESCP_Rank_Demoted_KickedOut_Companions>With Jorrvaskr's doors closed to the colony, {0} no longer stands as {1} and counts only as {2}.</ESCP_Rank_Demoted_KickedOut_Companions>
+    <ESCP_Rank_FormUp_Message_Companions>{0} calls the shield-siblings of {1} to their side.</ESCP_Rank_FormUp_Message_Companions>
+    <ESCP_Rank_Dismiss_Message_Companions>{0} sends the shield-siblings back to {1}.</ESCP_Rank_Dismiss_Message_Companions>
+    <ESCP_Rank_Rally_Title_Companions>{0} roars for Ysgramor</ESCP_Rank_Rally_Title_Companions>
+    <ESCP_Rank_Rally_Text_Companions>{0} lets out a battle cry that would shake the rafters of {1}. Every Companion within earshot takes heart.</ESCP_Rank_Rally_Text_Companions>
+    <ESCP_Rank_DrillingComplete_Companions>{0} and {1} finished their bout in the yard.</ESCP_Rank_DrillingComplete_Companions>
+    <ESCP_Rank_StudyingComplete_Companions>{0} and {1} finished trading the old sagas.</ESCP_Rank_StudyingComplete_Companions>
+    <ESCP_Rank_InspectionComplete_Commended_Companions>{0} weighs {1}'s steel and finds it worthy of Jorrvaskr.</ESCP_Rank_InspectionComplete_Commended_Companions>
+    <ESCP_Rank_InspectionComplete_Reprimanded_Companions>{0} weighs {1}'s steel and calls it a disgrace to the Companions.</ESCP_Rank_InspectionComplete_Reprimanded_Companions>
+    <ESCP_Rank_InspectionComplete_Passed_Companions>{0} weighs {1}'s steel. It will do.</ESCP_Rank_InspectionComplete_Passed_Companions>
+    <ESCP_Rank_InspectionComplete_NoGear_Companions>{0} looks for {1}'s steel and finds none to weigh.</ESCP_Rank_InspectionComplete_NoGear_Companions>
+    <ESCP_Rank_PunishmentAssigned_Companions>{0} sends {1} to haul water for the mead hall.</ESCP_Rank_PunishmentAssigned_Companions>
+    <ESCP_Rank_MentorDown_Message_Companions>{1} has fallen! {0} fights on with a whelp's fury.</ESCP_Rank_MentorDown_Message_Companions>
+    <ESCP_Rank_Suspended_Title_Companions>Shield set aside</ESCP_Rank_Suspended_Title_Companions>
+    <ESCP_Rank_History_Enrolled_Companions>Took the oath as {0}.</ESCP_Rank_History_Enrolled_Companions>
+    <ESCP_Rank_History_FormedUp_Companions>Called the shield-siblings of {0} to arms.</ESCP_Rank_History_FormedUp_Companions>
+    <ESCP_Rank_History_Inspected_Companions>Weighed {0}'s steel.</ESCP_Rank_History_Inspected_Companions>
+    <ESCP_Rank_History_Rallied_Companions>Roared for Ysgramor in the name of {0}.</ESCP_Rank_History_Rallied_Companions>
+    <ESCP_Rank_History_Punished_Companions>Sent {0} to haul water.</ESCP_Rank_History_Punished_Companions>
+    <ESCP_Rank_History_MentorDown_Companions>Sponsor {0} fell in battle.</ESCP_Rank_History_MentorDown_Companions>
+    <ESCP_Rank_History_MentorDied_Companions>Sponsor {0} has gone to Sovngarde.</ESCP_Rank_History_MentorDied_Companions>
+
+</LanguageData>

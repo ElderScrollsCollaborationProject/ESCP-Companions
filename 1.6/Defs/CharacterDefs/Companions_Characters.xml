@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_NjadaStonearm</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Njada</firstName>
+                <lastName>Stonearm</lastName>
+                <gender>Female</gender>
+                <age>27</age>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>Tough</key>
+                        <value>0</value>
+                    </li>
+                    <li>
+                        <key>Abrasive</key>
+                        <value>0</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef>
+        <defName>ESCP_Character_Torvar</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Torvar</firstName>
+                <gender>Male</gender>
+                <age>31</age>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>DrugDesire</key>
+                        <value>1</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+</Defs>

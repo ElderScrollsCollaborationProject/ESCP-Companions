@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Companions_Enlist_Letter_Title>Joined the Companions</ESCP_Companions_Enlist_Letter_Title>
+    <ESCP_Companions_Enlist_Letter_Label>Your colony now stands with the Companions. Open the guild ledger at any settlement hosting them to draw pay, take work and see your standing.</ESCP_Companions_Enlist_Letter_Label>
+    <ESCP_Companions_Enlist_Button_Label>Join the Companions</ESCP_Companions_Enlist_Button_Label>
+    <ESCP_Companions_Enlist_Button_Desc>Prove your worth to the Companions and earn a place at Jorrvaskr's table.</ESCP_Companions_Enlist_Button_Desc>
+    <ESCP_Companions_Enlist_Requrements_Not_Satisfied>The Companions does not trust you yet. Standing: {0}.</ESCP_Companions_Enlist_Requrements_Not_Satisfied>
+    <ESCP_Companions_Enlisted_To_Hostile_Faction>You cannot join the Companions while your colony is at odds with it.</ESCP_Companions_Enlisted_To_Hostile_Faction>
+    <ESCP_Companions_Enlisted_With_Key>Member of the Companions</ESCP_Companions_Enlisted_With_Key>
+    <ESCP_Companions_Missions_Label>Contracts</ESCP_Companions_Missions_Label>
+    <ESCP_Companions_Missions_Desc>See what work the guild has posted.</ESCP_Companions_Missions_Desc>
+    <ESCP_Companions_Menu_Missions_Desc>Open contracts posted by the Companions. Accepting one costs nothing; payment comes when it is done.</ESCP_Companions_Menu_Missions_Desc>
+    <ESCP_Companions_Menu_Missions_Select_Quest>Select contract</ESCP_Companions_Menu_Missions_Select_Quest>
+    <ESCP_Companions_Menu_Missions_Start_Quest>Accept</ESCP_Companions_Menu_Missions_Start_Quest>
+    <ESCP_Companions_Menu_Missions_Collect_Bounty>Collect</ESCP_Companions_Menu_Missions_Collect_Bounty>
+    <ESCP_Companions_Salary_Label>Draw stipend</ESCP_Companions_Salary_Label>
+    <ESCP_Companions_Salary_Desc>Collect your share from the guild's steward.</ESCP_Companions_Salary_Desc>
+    <ESCP_Companions_Provisions_Label>Draw supplies</ESCP_Companions_Provisions_Label>
+    <ESCP_Companions_Provisions_Desc>Take what the guild sets aside for its members on the road.</ESCP_Companions_Provisions_Desc>
+    <ESCP_Companions_Storage_Label>Guild lockbox</ESCP_Companions_Storage_Label>
+    <ESCP_Companions_Storage_Desc>Leave goods in the guild's keeping and collect them from any hall.</ESCP_Companions_Storage_Desc>
+    <ESCP_Companions_Resign_Menu_Text>Leave the Companions? Your standing will suffer for it.</ESCP_Companions_Resign_Menu_Text>
+    <ESCP_Companions_Resign_Letter_Title>Left the Companions</ESCP_Companions_Resign_Letter_Title>
+    <ESCP_Companions_Resign_Letter_Label>Your colony has left the Companions. Its doors are closed to you for now.</ESCP_Companions_Resign_Letter_Label>
+    <ESCP_Companions_Resign_Button_Label>Leave the guild</ESCP_Companions_Resign_Button_Label>
+    <ESCP_Companions_Resign_Button_Desc>Give up your membership and every rank that goes with it.</ESCP_Companions_Resign_Button_Desc>
+    <ESCP_Companions_Kick_Out_Letter_Title>Expelled from the Companions</ESCP_Companions_Kick_Out_Letter_Title>
+    <ESCP_Companions_Kick_Out_Label_Title>Relations have fallen too far. The Companions has struck your colony from its books.</ESCP_Companions_Kick_Out_Label_Title>
+    <ESCP_Companions_Work_0_Label>Take Odd Jobs</ESCP_Companions_Work_0_Label>
+    <ESCP_Companions_Work_0_Desc>Clear wolves and settle grudges for whoever pays.</ESCP_Companions_Work_0_Desc>
+    <ESCP_Companions_Work_1_Label>Spar in the Yard</ESCP_Companions_Work_1_Label>
+    <ESCP_Companions_Work_1_Desc>Trade blows behind Jorrvaskr until someone falls down.</ESCP_Companions_Work_1_Desc>
+
+</LanguageData>

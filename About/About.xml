@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <packageId>Rick.ESCP.Companions</packageId>
+    <author>Rick</author>
+    <name>ESCP - The Companions</name>
+    <description>The Elder Scrolls Collaboration Project Presents: The Companions. Skyrim's ancient warrior brotherhood, headquartered in Whiterun's Jorrvaskr. Unlike the cross-provincial Fighters Guild, the Companions answer only to Skyrim. They predate Imperial expansion and have no interest in guild charters from Cyrodiil. They take contracts from those who prove themselves worth taking contracts from, and they do not forget who earned their respect.</description>
+    <url>https://github.com/ElderScrollsCollaborationProject</url>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Rick.ESCP.Core.Tools</packageId>
+            <displayName>ESCP - Tools</displayName>
+            <downloadUrl>https://github.com/ElderScrollsCollaborationProject</downloadUrl>
+        </li>
+        <li>
+            <packageId>Rick.ESCP.FightersGuild</packageId>
+            <displayName>ESCP - Fighters Guild</displayName>
+            <downloadUrl>https://github.com/ElderScrollsCollaborationProject</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Rick.ESCP.Core.Tools</li>
+        <li>Rick.ESCP.FightersGuild</li>
+        <li>Rick.ESCP.Nords</li>
+    </loadAfter>
+
+</ModMetaData>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ESCP.Ranks.RankTrackDef>
+        <defName>ESCP_RankTrack_Companions</defName>
+        <label>Companions ranks</label>
+        <iconPath>UI/Abilities/Berserk</iconPath>
+        <guild>Companions</guild>
+        <rootTier>ESCP_Rank_Companions_Whelp</rootTier>
+        <owningFaction>ESCP_Faction_Companions</owningFaction>
+        <collectiveNoun>Jorrvaskr</collectiveNoun>
+        <drillLabel>Yard Bout</drillLabel>
+        <drillDesc>Practice with any colonist. Both stop what they are doing and both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Tell the Old Sagas</studyLabel>
+        <studyDesc>Work through the guild's craft with another member. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Weigh Their Steel</inspectLabel>
+        <inspectDesc>Look over a junior member's gear. Good upkeep earns praise and poor upkeep earns a sharp word.</inspectDesc>
+        <punishLabel>Send for Water...</punishLabel>
+        <punishDesc>Set a junior member to tedious labor for a failure, souring their mood. Once per day per member.</punishDesc>
+        <rallyLabel>For Ysgramor!</rallyLabel>
+        <rallyDesc>Call on {0} to fight harder for a short while. Once every few days.</rallyDesc>
+        <fallInLabel>To Me, Shield-Siblings</fallInLabel>
+        <fallInDesc>Order {0} to fall in behind you, up to four deep. They hold formation until released.</fallInDesc>
+        <dismissLabel>Back to the Mead Hall</dismissLabel>
+        <dismissDesc>Release {0} from formation so they can return to their duties.</dismissDesc>
+    </ESCP.Ranks.RankTrackDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Companions_Whelp</defName>
+        <label>whelp</label>
+        <description>Fresh to the mead hall, running errands and taking bruises from anyone who cares to give them.</description>
+        <nextTierOptions>
+            <li>ESCP_Rank_Companions_ShieldSibling</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Companions_ShieldSibling</defName>
+        <label>shield-sibling</label>
+        <description>Blooded in a real fight and welcome at the long table.</description>
+        <minDaysInRank>4</minDaysInRank>
+        <skillRequirements>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <minGuildReputation>10</minGuildReputation>
+        <trainingXpPerHour>
+            <Melee>400</Melee>
+            <Animals>150</Animals>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Guild_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Companions_Companion</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Companions_Companion</defName>
+        <label>companion</label>
+        <description>A full member of the order, taking work under no one's watch.</description>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Melee>8</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>2</minMissionsCompleted>
+        <minGuildReputation>25</minGuildReputation>
+        <trainingXpPerHour>
+            <Melee>500</Melee>
+            <Animals>200</Animals>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Guild_Novice</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Companions_CircleMember</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Companions_CircleMember</defName>
+        <label>circle member</label>
+        <description>One of the few who sit at the Circle and shape the order's course.</description>
+        <minDaysInRank>14</minDaysInRank>
+        <skillRequirements>
+            <Melee>11</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>4</minMissionsCompleted>
+        <minGuildReputation>50</minGuildReputation>
+        <trainingXpPerHour>
+            <Melee>600</Melee>
+            <Animals>250</Animals>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Guild_Veteran</expedition>
+        <discipline>Combat</discipline>
+        <nextTierOptions>
+            <li>ESCP_Rank_Companions_Harbinger</li>
+        </nextTierOptions>
+    </ESCP.Ranks.RankTierDef>
+
+    <ESCP.Ranks.RankTierDef>
+        <defName>ESCP_Rank_Companions_Harbinger</defName>
+        <label>harbinger</label>
+        <description>Counsels the Companions, as the Harbinger always has, and does not presume to rule them.</description>
+        <minDaysInRank>20</minDaysInRank>
+        <skillRequirements>
+            <Melee>14</Melee>
+        </skillRequirements>
+        <minMissionsCompleted>6</minMissionsCompleted>
+        <minGuildReputation>75</minGuildReputation>
+        <trainingXpPerHour>
+            <Melee>700</Melee>
+            <Animals>300</Animals>
+        </trainingXpPerHour>
+        <expedition>ESCP_Expedition_Guild_Veteran</expedition>
+        <discipline>Combat</discipline>
+    </ESCP.Ranks.RankTierDef>
+
+</Defs>

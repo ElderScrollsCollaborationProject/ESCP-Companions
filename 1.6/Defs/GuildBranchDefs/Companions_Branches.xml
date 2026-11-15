@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ESCP.Guilds.GuildBranchDef>
+        <defName>ESCP_GuildBranch_Companions</defName>
+        <guild>Companions</guild>
+        <guildFactionDef>ESCP_Faction_Companions</guildFactionDef>
+        <guildActionLabel>Request Companions contract</guildActionLabel>
+        <hostFactionDefs>
+            <li MayRequire="Rick.ESCP.Nords">ESCP_Faction_Kingdom_of_Skyrim</li>
+        </hostFactionDefs>
+    </ESCP.Guilds.GuildBranchDef>
+
+</Defs>
