@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ESCP.Core.CharacterDef>
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
         <defName>ESCP_Character_NjadaStonearm</defName>
         <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
         <faction>ESCP_Faction_Companions</faction>
@@ -31,7 +31,7 @@
         </definitions>
     </ESCP.Core.CharacterDef>
 
-    <ESCP.Core.CharacterDef>
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
         <defName>ESCP_Character_Torvar</defName>
         <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
         <faction>ESCP_Faction_Companions</faction>
@@ -42,6 +42,7 @@
         <definitions>
             <li Class="ESCP.Core.CharacterStoryDefinition">
                 <firstName>Torvar</firstName>
+                <lastName></lastName>
                 <gender>Male</gender>
                 <age>31</age>
             </li>
@@ -50,6 +51,249 @@
                     <li>
                         <key>DrugDesire</key>
                         <value>1</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_KodlakWhitemane</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Champion</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Kodlak</firstName>
+                <lastName>Whitemane</lastName>
+                <nickname>the Harbinger</nickname>
+                <gender>Male</gender>
+                <age>70</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(225, 225, 225)</hairColor>
+                <hairDef>Long</hairDef>
+                <beardDef>Full</beardDef>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>Kind</key>
+                        <value>0</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_Aela</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Veteran</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Aela</firstName>
+                <lastName></lastName>
+                <nickname>the Huntress</nickname>
+                <gender>Female</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 60, 40)</hairColor>
+                <hairDef>Long</hairDef>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_Vilkas</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Veteran</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Vilkas</firstName>
+                <lastName></lastName>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 30)</hairColor>
+                <hairDef>LongMess</hairDef>
+                <beardDef>Stubble</beardDef>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_Farkas</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Veteran</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Farkas</firstName>
+                <lastName></lastName>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 30)</hairColor>
+                <hairDef>LongMess</hairDef>
+                <beardDef>Stubble</beardDef>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>Tough</key>
+                        <value>0</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_Skjor</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Veteran</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Skjor</firstName>
+                <lastName></lastName>
+                <nickname>the Scarred</nickname>
+                <gender>Male</gender>
+                <age>55</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 110, 100)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>Full</beardDef>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>Tough</key>
+                        <value>0</value>
+                    </li>
+                </traits>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Dunmer">
+        <defName>ESCP_Character_Athis</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Dunmer</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Athis</firstName>
+                <lastName></lastName>
+                <gender>Male</gender>
+                <age>60</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 35)</hairColor>
+                <hairDef>ShortCut</hairDef>
+                <headTypeDef>ESCP_HeadMerColouredEyes_Male_Average_Normal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Imperials">
+        <defName>ESCP_Character_Ria</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Member</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>4</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Imperial</xenotype>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Ria</firstName>
+                <lastName></lastName>
+                <gender>Female</gender>
+                <age>24</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 60, 40)</hairColor>
+                <hairDef>BriefPonytail</hairDef>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </ESCP.Core.CharacterDef>
+
+    <ESCP.Core.CharacterDef MayRequire="Rick.ESCP.Nords">
+        <defName>ESCP_Character_Ysgramor</defName>
+        <pawnKind>ESCP_Pawnkind_FightersGuild_Champion</pawnKind>
+        <faction>ESCP_Faction_Companions</faction>
+        <eras>
+            <li>1</li>
+        </eras>
+        <xenotype>ESCP_Xenotype_Nord</xenotype>
+        <roles>
+            <li Class="ESCP.Core.CharacterRole_FactionLeader">
+                <seniority>700</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <li Class="ESCP.Core.CharacterStoryDefinition">
+                <firstName>Ysgramor</firstName>
+                <lastName></lastName>
+                <nickname>of the Five Hundred</nickname>
+                <gender>Male</gender>
+                <age>55</age>
+            </li>
+            <li Class="ESCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 120, 70)</hairColor>
+                <hairDef>LongMess</hairDef>
+                <beardDef>Norse</beardDef>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+            <li Class="ESCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>Tough</key>
+                        <value>0</value>
                     </li>
                 </traits>
             </li>
