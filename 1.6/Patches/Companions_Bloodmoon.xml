@@ -17,11 +17,6 @@
                     <xpath>Defs/ESCP.Ranks.RankTierDef[defName="ESCP_Rank_Companions_CircleMember"]</xpath>
                     <value>
                         <pathName>The Blood Ritual</pathName>
-                        <permanentHediff>Mashed_Bloodmoon_Lycanthrope</permanentHediff>
-                        <blockedByHediffs>
-                            <li MayRequire="Rick.ESCP.Vampires">ESCP_Hediff_Vampirism</li>
-                            <li MayRequire="Rick.ESCP.Vampires">ESCP_Hediff_SanguinareVampiris</li>
-                        </blockedByHediffs>
                     </value>
                 </li>
             </operations>

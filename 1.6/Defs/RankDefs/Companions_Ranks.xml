@@ -95,6 +95,11 @@
         <nextTierOptions>
             <li>ESCP_Rank_Companions_Harbinger</li>
         </nextTierOptions>
+        <permanentHediff MayRequire="SirMashedPotato.Bloodmoon">Mashed_Bloodmoon_Lycanthrope</permanentHediff>
+        <blockedByHediffs>
+            <li MayRequire="SirMashedPotato.Bloodmoon,Rick.ESCP.Vampires">ESCP_Hediff_Vampirism</li>
+            <li MayRequire="SirMashedPotato.Bloodmoon,Rick.ESCP.Vampires">ESCP_Hediff_SanguinareVampiris</li>
+        </blockedByHediffs>
     </ESCP.Ranks.RankTierDef>
 
     <ESCP.Ranks.RankTierDef>
