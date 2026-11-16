@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mashed's Bloodmoon</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ESCP.Ranks.RankTierDef[defName="ESCP_Rank_Companions_CircleMember"]/description</xpath>
+                    <value>
+                        <description>One of the few who sit at the Circle and shape the order's course. Every member of the Circle has taken the Blood of Hircine in the Underforge and carries the beast inside them.</description>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ESCP.Ranks.RankTierDef[defName="ESCP_Rank_Companions_CircleMember"]</xpath>
+                    <value>
+                        <pathName>The Blood Ritual</pathName>
+                        <permanentHediff>Mashed_Bloodmoon_Lycanthrope</permanentHediff>
+                        <blockedByHediffs>
+                            <li MayRequire="Rick.ESCP.Vampires">ESCP_Hediff_Vampirism</li>
+                            <li MayRequire="Rick.ESCP.Vampires">ESCP_Hediff_SanguinareVampiris</li>
+                        </blockedByHediffs>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
